@@ -26,10 +26,10 @@ En la creación y actualización de carritos, desde la pestaña de body de Postm
 
 | Método | Código | Respuesta |
 | :--- | :--- | :--- |
-| **POST** | ![Screenshot 2026-02-08 at 17.38.40.png](..%2F..%2FDesktop%2FScreenshot%202026-02-08%20at%2017.38.40.png) | ![Screenshot 2026-02-08 at 17.38.46.png](..%2F..%2FDesktop%2FScreenshot%202026-02-08%20at%2017.38.46.png) |
-| **GET** | ![Screenshot 2026-02-08 at 17.38.57.png](..%2F..%2FDesktop%2FScreenshot%202026-02-08%20at%2017.38.57.png) | ![Screenshot 2026-02-08 at 17.39.02.png](..%2F..%2FDesktop%2FScreenshot%202026-02-08%20at%2017.39.02.png) |
-| **DELETE** | ![Screenshot 2026-02-08 at 17.39.11.png](..%2F..%2FDesktop%2FScreenshot%202026-02-08%20at%2017.39.11.png) | ![Screenshot 2026-02-08 at 17.39.16.png](..%2F..%2FDesktop%2FScreenshot%202026-02-08%20at%2017.39.16.png) |
-| **GET** | ![Screenshot 2026-02-08 at 17.39.23.png](..%2F..%2FDesktop%2FScreenshot%202026-02-08%20at%2017.39.23.png) | ![Screenshot 2026-02-08 at 17.39.27.png](..%2F..%2FDesktop%2FScreenshot%202026-02-08%20at%2017.39.27.png) |
+| **POST** | ![Screenshot 2026-02-08 at 17.38.40.png](images%2FScreenshot%202026-02-08%20at%2017.38.40.png) | ![Screenshot 2026-02-08 at 17.38.46.png](images%2FScreenshot%202026-02-08%20at%2017.38.46.png) |
+| **GET** | ![Screenshot 2026-02-08 at 17.38.57.png](images%2FScreenshot%202026-02-08%20at%2017.38.57.png) | ![Screenshot 2026-02-08 at 17.39.02.png](images%2FScreenshot%202026-02-08%20at%2017.39.02.png) |
+| **DELETE** | ![Screenshot 2026-02-08 at 17.39.11.png](images%2FScreenshot%202026-02-08%20at%2017.39.11.png) | ![Screenshot 2026-02-08 at 17.39.16.png](images%2FScreenshot%202026-02-08%20at%2017.39.16.png) |
+| **GET** | ![Screenshot 2026-02-08 at 17.39.23.png](images%2FScreenshot%202026-02-08%20at%2017.39.23.png) | ![Screenshot 2026-02-08 at 17.39.27.png](images%2FScreenshot%202026-02-08%20at%2017.39.27.png) |
 
 En la tabla vemos el proceso de crear un carrito (carrito con id 2), comprobamos que se ha creado y nos devuelve su info, luego eliminamos el carrito y al realizar otro get nos devuelve error al no contener nada el carrito.
 
