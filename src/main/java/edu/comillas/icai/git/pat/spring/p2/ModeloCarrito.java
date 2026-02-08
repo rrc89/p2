@@ -1,10 +1,6 @@
 package edu.comillas.icai.git.pat.spring.p2;
 
-import org.jspecify.annotations.NonNull;
 
-//package com.example.practica2.repository;
-
-//import com.example.practica2.model.Carrito;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

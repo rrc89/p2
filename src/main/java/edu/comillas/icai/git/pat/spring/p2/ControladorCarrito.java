@@ -54,32 +54,3 @@ public class ControladorCarrito {
 
 
 
-/*
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
-
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
-
-@RestController
-public class ControladorCarrito {
-
-    private final Map<Long, ModeloCarrito> carritos= new ConcurrentHashMap<>();
-    @PostMapping("/api/carrito")
-    @ResponseStatus(HttpStatus.CREATED)
-
-    public ModeloCarrito crea(@RequestBody ModeloCarrito carritoNuevo) {
-        carritos.put(carritoNuevo.idCarrito(), carritoNuevo);
-        return carritoNuevo;
-    }
-    @GetMapping("/api/carrito/{idCarrito}")
-    public ModeloCarrito buscar(@PathVariable Long idCarrito){
-        if(carritos.get(idCarrito)==null){
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
-        }
-        return carritos.get(idCarrito);
-    }
-}
-*/
