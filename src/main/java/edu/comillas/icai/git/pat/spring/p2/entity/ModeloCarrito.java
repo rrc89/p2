@@ -1,6 +1,7 @@
-package edu.comillas.icai.git.pat.spring.p2;
+package edu.comillas.icai.git.pat.spring.p2.entity;
 
 
+import edu.comillas.icai.git.pat.spring.p2.entity.Carrito;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
