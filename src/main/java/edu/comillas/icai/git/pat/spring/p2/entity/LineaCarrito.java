@@ -19,6 +19,7 @@ public class LineaCarrito {
     private Carrito carrito;
 
     private Long idArticulo;
+    private String descripcion;
     private Double precioUnitario;
     private Integer numeroUnidades;
     private Double costeLinea;
@@ -60,6 +61,13 @@ public class LineaCarrito {
 
     public Long getIdArticulo() {
         return idArticulo;
+    }
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public void setIdArticulo(Long idArticulo) {

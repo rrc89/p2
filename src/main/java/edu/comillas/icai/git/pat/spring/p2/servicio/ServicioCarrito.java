@@ -57,12 +57,25 @@ public class ServicioCarrito {
     public Carrito anadirLinea(Long idCarrito, LineaCarrito linea){
         Carrito carrito = repoCarrito.findById(idCarrito)
                 .orElseThrow(() -> new RuntimeException("No se ha encontrado el carrito"));
-        linea.calcularCoste(); // con esto calculamos el coste (precio * uds)
-        linea.setCarrito(carrito); // para establecer realcion bi-direccional
 
-        carrito.getLineas().add(linea);
+        // busco si ya existe una línea con ese idArticulo
+        Optional<LineaCarrito> existente = carrito.getLineas().stream()
+                .filter(l -> l.getIdArticulo().equals(linea.getIdArticulo()))
+                .findFirst();
+
+        if (existente.isPresent()) {
+            // si ya existe, sumo las unidades y recalculo el coste de esa línea
+            LineaCarrito lineaExistente = existente.get();
+            lineaExistente.setNumeroUnidades(lineaExistente.getNumeroUnidades() + linea.getNumeroUnidades());
+            lineaExistente.calcularCoste(); // con esto calculamos el coste (precio * uds)
+        } else {
+            // si no existe, la añado como nueva
+            linea.calcularCoste(); // con esto calculamos el coste (precio * uds)
+            linea.setCarrito(carrito); // para establecer realcion bi-direccional
+            carrito.getLineas().add(linea);
+        }
+
         carrito.calcularTotal(); // recalculo el coste total del carrito
-
         // como he puesto cascadetype.all, al guardar el carrito, se guarda la linea automaticamente
         return repoCarrito.save(carrito);
     }
@@ -72,10 +85,15 @@ public class ServicioCarrito {
         Carrito carrito = repoCarrito.findById(idCarrito)
                 .orElseThrow(() -> new RuntimeException("no se ha encontrado el carrito"));
 
-        // busco la linea que coincide con el id de articulo especificado y la elimino
-        boolean eliminada = carrito.getLineas().removeIf(l -> l.getIdArticulo().equals(idArticulo));
+        // busco la línea a eliminar, la que coincida con el id del articulo
+        LineaCarrito lineaABorrar = carrito.getLineas().stream()
+                .filter(l -> l.getIdArticulo().equals(idArticulo))
+                .findFirst()
+                .orElse(null);
 
-        if(eliminada){
+        if (lineaABorrar != null) {
+            carrito.getLineas().remove(lineaABorrar);
+            lineaABorrar.setCarrito(null); // rompo la relación bidireccional
             carrito.calcularTotal(); // recalculo el total del carrito despues de haber borrado la linea
             return repoCarrito.save(carrito); // guardo el carrito actualizado
         }

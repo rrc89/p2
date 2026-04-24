@@ -1,3 +1,33 @@
 2026-03-05 10:44:32.263545+01:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARRITO" not found (this database is empty); SQL statement:
 select c1_0.id_carrito,c1_0.correo,c1_0.id_usuario,c1_0.total_precio from carrito c1_0 [42104-240]
+2026-04-24 18:12:51.173506+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARRITO" not found (this database is empty); SQL statement:
+select c1_0.id_carrito,c1_0.correo,c1_0.id_usuario,c1_0.total_precio from carrito c1_0 [42104-240]
+2026-04-24 18:13:42.499162+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARRITO" not found (this database is empty); SQL statement:
+select c1_0.id_carrito,c1_0.correo,c1_0.id_usuario,c1_0.total_precio from carrito c1_0 [42104-240]
+2026-04-24 18:13:45.670943+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARRITO" not found (this database is empty); SQL statement:
+insert into carrito (correo,id_usuario,total_precio,id_carrito) values (?,?,?,default) [42104-240]
+2026-04-24 18:13:48.869762+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARRITO" not found (this database is empty); SQL statement:
+select c1_0.id_carrito,c1_0.correo,c1_0.id_usuario,c1_0.total_precio from carrito c1_0 [42104-240]
+2026-04-24 18:13:51.097979+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARRITO" not found (this database is empty); SQL statement:
+insert into carrito (correo,id_usuario,total_precio,id_carrito) values (?,?,?,default) [42104-240]
+2026-04-24 18:13:53.583135+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARRITO" not found (this database is empty); SQL statement:
+insert into carrito (correo,id_usuario,total_precio,id_carrito) values (?,?,?,default) [42104-240]
+2026-04-24 18:14:30.320448+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARRITO" not found (this database is empty); SQL statement:
+select c1_0.id_carrito,c1_0.correo,c1_0.id_usuario,c1_0.total_precio from carrito c1_0 [42104-240]
+2026-04-24 18:14:32.647944+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARRITO" not found (this database is empty); SQL statement:
+insert into carrito (correo,id_usuario,total_precio,id_carrito) values (?,?,?,default) [42104-240]
+2026-04-24 18:16:42.048538+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARRITO" not found (this database is empty); SQL statement:
+insert into carrito (correo,id_usuario,total_precio,id_carrito) values (?,?,?,default) [42104-240]
+2026-04-24 18:18:16.139020+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CARRITO" not found (this database is empty); SQL statement:
+insert into carrito (correo,id_usuario,total_precio,id_carrito) values (?,?,?,default) [42104-240]
